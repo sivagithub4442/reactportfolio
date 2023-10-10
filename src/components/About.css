@@ -1,0 +1,61 @@
+.main{
+    padding: 200px;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content {
+    /* Your content styles */
+    flex: 1; /* Let content take remaining space */
+    padding: 20px;
+  }
+  
+  .container {
+    position: relative; /* Create a stacking context */
+    width: 200px; /* Set the width of the container */
+    height: 200px; /* Set the height of the container */
+    overflow: hidden;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .foreground {
+    position: absolute;
+    top: 52%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0.97); /* Center the foreground image and set initial scale to 1 (normal size) */
+    width: 100%; /* Set the initial width of the foreground image (same as the container) */
+    height: 100%; /* Set the initial height of the foreground image (same as the container) */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 0.4s ease; /* Add smooth transition for the zoom effect */
+  }
+  
+  .container:hover .foreground {
+    transform: translate(-50%, -50%) scale(1.1); /* Zoom in to 120% on hover */
+  }
+
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing-animation 2s steps(40, end) infinite;
+  }
+  
+  @keyframes typing-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+   .name:hover {
+    color: rgb(9, 255, 177); /* Set the desired color for the hover effect */
+  }
+  

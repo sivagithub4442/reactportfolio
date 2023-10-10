@@ -1,0 +1,24 @@
+.contents{
+    padding: 200px;
+}
+
+.find{
+    margin-top: 100px;
+    padding: 150px;
+}
+
+.Skills{
+    margin-top: 180px;
+}
+
+.interests{
+    margin-top: 150px;
+}
+.cv{
+    background-color: rgba(185, 185, 185, 0.674);
+    border-bottom: 20px;
+    padding: 150px;
+}
+.cards{
+    margin-top: 50px;
+}
